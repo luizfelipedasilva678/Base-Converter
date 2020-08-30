@@ -17,8 +17,22 @@
         let numb16 = document.querySelector("#num-b16");
 
 
-        numb2.value = Number(num).toString(2);
-        numb8.value = Number(num).toString(8);
-        numb16.value = Number(num).toString(16);
+        numb2.value = converter(num, 2);
+        numb8.value = converter(num, 8);
+        numb16.value = converter(num, 16);
     })
+
+    let select  = document.querySelector("#other-bases");
+    select.addEventListener('blur', (e) => {
+        let result = document.querySelector("#result");
+        result.value = converter(input.value, StringToNumber(select.value));
+    })
+
+    function converter(num, base){
+        return Number(num).toString(base);
+    }
+
+    function StringToNumber(string){
+        return Number(string);
+    }
 })();
