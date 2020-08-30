@@ -29,7 +29,7 @@
     })
 
     function converter(num, base){
-        return Number(num).toString(base);
+        return StringToNumber(num).toString(base);
     }
 
     function StringToNumber(string){
