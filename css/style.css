@@ -1,0 +1,83 @@
+html, body, .container{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    font-family: 'Oswald';
+}
+
+div{
+    margin: 1rem;
+}
+
+.container{
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: 1fr 40vw 1fr;
+    grid-template-columns: 14vw 1fr;
+    grid-template-areas: 
+        'header main'
+        'header main'
+        'header footer'
+    ;
+}
+
+.header{
+    border-right: solid  rgba(4, 119, 196, 0.8) 3px;
+    grid-area: header;
+    background-color: rgb(55, 56, 56);
+}
+
+.main{
+    grid-area: main;
+    background-color: rgb(255, 255, 255);
+}
+
+.footer{
+    border-top: solid  rgba(4, 119, 196, 0.8) 3px;
+    grid-area: footer;
+    background-color: rgb(55, 56, 56); 
+}
+
+.div-form{
+    margin: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.footer-text{
+    text-align: center;
+    color: white;
+}
+
+.header-text{
+    text-align: center;
+    color: white;
+}
+
+@media (max-width: 600px){
+    .container{
+        display: grid;
+        min-height: 100vh;
+        grid-template-rows: 7vh 1fr 7.2vh;
+        grid-template-columns: 14vw 1fr;
+        grid-template-areas: 
+            'header header'
+            'main main'
+            'footer footer'
+        ;
+    }
+
+    .header-text{
+        font-size: 1rem;
+    }
+
+    .header{
+        border-right: solid rgb(55, 56, 56) 1px;
+        border-bottom: solid  rgba(4, 119, 196, 0.8) 3px;
+        grid-area: header;
+        background-color: rgb(55, 56, 56);
+    }
+}

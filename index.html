@@ -5,10 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Base converter</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
 </head>
 <body>
+    <div class="container">
+        <header class="header">
+            <h1 class="header-text">Base converter</h1>
+        </header>
     
-    
+        <main class="main">
+            <div class="div-form">
+                <form class="form" action="#">
+                    <div>
+                        <label for="num">Digite o número que você deseja converter: </label>
+                        <input type="text" name="num" id="num">
+                        <span id="message"></span>
+                    </div>
+
+                    <div>
+                        <label for="num-bin">Número na base 2: </label>
+                        <input type="text" name="num-bin" id="num-bin">
+                    </div>
+
+                    <div>
+                        <label for="num-b8">Número na base 8: </label>
+                        <input type="text" name="num-b8" id="num-b8">
+                    </div>
+                    
+                    <div>
+                        <label for="num-b16">Número na base 16: </label>
+                        <input type="text" name="num-b8" id="num-b16">
+                    </div>
+
+                    <div>
+                        <label for="other-bases">Escolha outra base qualquer:</label>
+                        <select name="other-bases" id="other-bases">
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="9">9</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p class="footer-text"><strong>Copyright@2020</strong>. All rights reserved</p>
+        </footer>
+    </div>
+
     <script src="js/script.js"></script>
 </body>
 </html>
